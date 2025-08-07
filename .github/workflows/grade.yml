@@ -40,11 +40,11 @@ jobs:
         with:
           path: submission
       # The base image does NOT have Java, Python etc. So install what you need here, e.g.:
-      # - name: Install Java
-      #   uses: actions/setup-java@v4
-      #   with:
-      #     distribution: 'temurin' # See 'Supported distributions' for available options
-      #     java-version: '21'
+      - name: Install Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin' 
+          java-version: '21'
       # - name: Install Python
       #   uses: actions/setup-python@v4
       #   with:
